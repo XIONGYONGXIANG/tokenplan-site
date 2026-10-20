@@ -1,0 +1,352 @@
+# Coding Plan 类套餐（AI 编程专属订阅，仅限编码 Agent 工具内使用）
+# 核心推荐：火山方舟 Coding Plan
+# 数据来源：各厂商官方定价页，核验日期见 verifiedAt
+
+plans:
+  # ===== 火山方舟 Coding Plan（核心推荐）=====
+  - id: volc-coding-lite
+    productId: volcengine
+    name: 火山方舟 Coding Plan Lite
+    type: coding
+    tier: Lite
+    price: 40
+    priceCurrency: CNY
+    priceNote: "40 元/月，多模型自由切换"
+    firstMonthNote: "首月 40 元"
+    billingUnit: "月"
+    limits:
+      fiveHour: "5小时动态刷新"
+      weekly: null
+      monthly: "月度总额度"
+    perYuanQuota: null
+    modelCount: 5
+    toolCount: 10
+    models:
+      - 豆包 Seed
+      - DeepSeek V4 Flash
+      - GLM
+      - Kimi
+      - MiniMax
+    tools:
+      - Claude Code
+      - OpenClaw
+      - Cline
+      - Cursor
+      - TraeCode
+      - Kilo Code
+      - Roo Code
+      - Codex CLI
+    highlights:
+      - 模型池最全，Auto 自动调度选模型
+      - 国内节点稳定，并发延迟口碑最好
+      - 兼容所有主流 IDE 编码 Agent
+      - 含 Embedding 向量模型，写代码同时做 RAG
+    caveats:
+      - 无 Harness 联网搜索
+      - 无图片/视频多模态（需升级 Agent Plan）
+      - 必须用 Coding Plan 专属 API Key
+    officialUrl: https://www.volcengine.com/product/ark
+    verifiedAt: "2026-10-19"
+
+  - id: volc-coding-pro
+    productId: volcengine
+    name: 火山方舟 Coding Plan Pro
+    type: coding
+    tier: Pro
+    price: 200
+    priceCurrency: CNY
+    priceNote: "200 元/月，5 倍 Lite 用量"
+    firstMonthNote: "首月 200 元"
+    billingUnit: "月"
+    limits:
+      fiveHour: "5小时动态刷新"
+      weekly: null
+      monthly: "月度总额度"
+    perYuanQuota: null
+    modelCount: 5
+    toolCount: 10
+    models:
+      - 豆包 Seed
+      - DeepSeek V4 Flash
+      - GLM
+      - Kimi
+      - MiniMax
+    tools:
+      - Claude Code
+      - OpenClaw
+      - Cline
+      - Cursor
+    highlights:
+      - 满足高阶大规模编程需求
+      - 用量为 Claude Max 数倍
+    officialUrl: https://www.volcengine.com/product/ark
+    verifiedAt: "2026-10-19"
+
+  # ===== 智谱 GLM Coding Plan =====
+  - id: zhipu-coding-lite
+    productId: zhipu
+    name: 智谱 GLM Coding Plan Lite
+    type: coding
+    tier: Lite
+    price: 118
+    priceCurrency: CNY
+    priceNote: "118 元/月，GLM 专属"
+    firstMonthNote: "首月 118 元"
+    billingUnit: "月"
+    limits:
+      fiveHour: "~80 prompts/5h"
+      weekly: "~400/周"
+      monthly: null
+    perYuanQuota: null
+    modelCount: 3
+    toolCount: 10
+    models:
+      - GLM-5
+      - GLM-4.7
+      - GLM-4.6
+    tools:
+      - Claude Code
+      - Roo Code
+      - Kilo Code
+      - CLine
+      - OpenCode
+      - Cursor
+    highlights:
+      - GLM-5.3 长链路编码 Agent 很强
+      - 内置 MCP 工具（联网/读仓库/代码视觉）
+      - 非高峰时段积分 5 折
+    caveats:
+      - 模型锁死，只能用 GLM 全系
+      - 同一密钥不允许多设备并发
+    officialUrl: https://www.zhipuai.cn/
+    verifiedAt: "2026-10-19"
+
+  - id: zhipu-coding-pro
+    productId: zhipu
+    name: 智谱 GLM Coding Plan Pro
+    type: coding
+    tier: Pro
+    price: 538
+    priceCurrency: CNY
+    priceNote: "538 元/月"
+    firstMonthNote: "首月 538 元"
+    billingUnit: "月"
+    limits:
+      fiveHour: "~400 prompts/5h"
+      weekly: "~2000/周"
+      monthly: null
+    perYuanQuota: null
+    modelCount: 3
+    toolCount: 10
+    models:
+      - GLM-5
+      - GLM-4.7
+      - GLM-4.6
+    tools:
+      - Claude Code
+      - Roo Code
+      - Cursor
+    highlights:
+      - MCP 1000 次/月（搜索+读取）
+      - 生成速度更快
+    officialUrl: https://www.zhipuai.cn/
+    verifiedAt: "2026-10-19"
+
+  # ===== 阿里云百炼 Coding Plan =====
+  - id: bailian-coding-pro
+    productId: aliyun
+    name: 百炼 Coding Plan Pro
+    type: coding
+    tier: Pro
+    price: 200
+    priceCurrency: CNY
+    priceNote: "200 元/月，每日限量抢购"
+    firstMonthNote: "需抢名额"
+    billingUnit: "月"
+    limits:
+      fiveHour: "1200次请求/5小时"
+      weekly: "9000次/周"
+      monthly: "18000次/月"
+    perYuanQuota: null
+    modelCount: 3
+    toolCount: 5
+    models:
+      - Qwen 系列
+      - GLM
+      - Kimi
+    tools:
+      - Claude Code
+      - Cursor
+    highlights:
+      - Qwen Coder 能力不错
+      - 一套额度支持多模型
+    caveats:
+      - 需抢名额，供给不稳定
+      - 高峰排队明显
+      - 仅主账号可用，不支持 RAM
+    officialUrl: https://bailian.console.aliyun.com/
+    verifiedAt: "2026-10-19"
+
+  # ===== 腾讯云 Coding Plan =====
+  - id: tencent-coding-lite
+    productId: tencent
+    name: 腾讯云 Coding Plan Lite
+    type: coding
+    tier: Lite
+    price: 7.9
+    priceCurrency: CNY
+    priceNote: "首月 7.9 元，次月 20 元，第三月起 40 元"
+    firstMonthNote: "首月 ¥7.9"
+    billingUnit: "月"
+    limits:
+      fiveHour: "1200次请求/5小时"
+      weekly: "9000次/周"
+      monthly: "18000次/月"
+    perYuanQuota: null
+    modelCount: 4
+    toolCount: 5
+    models:
+      - Tencent HY 2.0
+      - GLM-5
+      - Kimi-K2.5
+      - MiniMax-M2.7
+    tools:
+      - OpenClaw
+      - Codebuddy
+      - Claude Code
+      - CLine
+      - Cursor
+    highlights:
+      - 混元自研+顶尖第三方模型
+      - 首月超低价
+    caveats:
+      - 禁止 API 调用，仅限编程工具交互
+      - 不支持退订退款
+    officialUrl: https://cloud.tencent.com/act/pro/tokenplan
+    verifiedAt: "2026-10-19"
+
+  # ===== MiniMax Token Plan =====
+  - id: minimax-token-starter
+    productId: minimax
+    name: MiniMax Token Plan Starter
+    type: coding
+    tier: Starter
+    price: 29
+    priceCurrency: CNY
+    priceNote: "29 元/月，M2.7 ~50TPS"
+    firstMonthNote: "首月 29 元"
+    billingUnit: "月"
+    limits:
+      fiveHour: "100 prompts/5小时"
+      weekly: null
+      monthly: null
+    perYuanQuota: null
+    modelCount: 3
+    toolCount: 5
+    models:
+      - M2.7
+      - M2.1
+      - M2
+    tools:
+      - Claude Code
+      - Roo Code
+      - Cursor
+    highlights:
+      - 100+ TPS 极速推理
+      - 入门级开发场景
+    officialUrl: https://www.minimaxi.com/
+    verifiedAt: "2026-10-19"
+
+  - id: minimax-token-max
+    productId: minimax
+    name: MiniMax Token Plan Max
+    type: coding
+    tier: Max
+    price: 119
+    priceCurrency: CNY
+    priceNote: "119 元/月，10 倍 Starter 用量"
+    firstMonthNote: "首月 119 元"
+    billingUnit: "月"
+    limits:
+      fiveHour: "1000 prompts/5小时"
+      weekly: null
+      monthly: null
+    perYuanQuota: null
+    modelCount: 3
+    toolCount: 5
+    models:
+      - M2.7
+      - M2.1
+      - M2
+    tools:
+      - Claude Code
+      - Roo Code
+      - Cursor
+    highlights:
+      - 10 倍 Starter 用量
+      - 极速推理
+    officialUrl: https://www.minimaxi.com/
+    verifiedAt: "2026-10-19"
+
+  # ===== Kimi Code Plan =====
+  - id: kimi-code-andante
+    productId: kimi
+    name: Kimi Code Plan Andante
+    type: coding
+    tier: Andante
+    price: 49
+    priceCurrency: CNY
+    priceNote: "49 元/月，年付 39 元/月"
+    firstMonthNote: "首月 49 元"
+    billingUnit: "月"
+    limits:
+      fiveHour: "300-1200次 API 调用/5h"
+      weekly: "每7天刷新"
+      monthly: null
+    perYuanQuota: null
+    modelCount: 1
+    toolCount: 4
+    models:
+      - Kimi K2.5
+    tools:
+      - Kimi CLI
+      - Claude Code
+      - Roo Code
+      - Kimi Code for VS Code
+    highlights:
+      - 含会员权益
+      - 限时额度扩容 3 倍
+    caveats:
+      - 额度每7天刷新，不累积
+    officialUrl: https://www.moonshot.cn/
+    verifiedAt: "2026-10-19"
+
+  # ===== 小米 MiMo =====
+  - id: xiaomi-mimo-starter
+    productId: xiaomi
+    name: 小米 MiMo Coding Plan Lite
+    type: coding
+    tier: Lite
+    price: 39
+    priceCurrency: CNY
+    priceNote: "39 元/月，首购 34.32 元"
+    firstMonthNote: "首购 ¥34.32"
+    billingUnit: "月"
+    limits:
+      fiveHour: null
+      weekly: null
+      monthly: "6000万 Credits/月"
+    perYuanQuota: null
+    modelCount: 8
+    toolCount: 5
+    models:
+      - MiMo-V2.5-Pro
+      - MiMo-V2.5
+    tools:
+      - Claude Code
+      - Cursor
+    highlights:
+      - 8 款模型
+      - 夜间 8 折
+    officialUrl: https://www.xiaomi.com/
+    verifiedAt: "2026-10-19"

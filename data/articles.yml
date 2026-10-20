@@ -1,0 +1,61 @@
+# 厂商动态文章（自动生成的价格变动摘要）
+# 由后台 sourcing 任务 diff 官方页面后生成
+
+articles:
+  - id: volc-coding-plan-launch
+    title: "火山方舟 Coding Plan 上线：5 款模型自由切换，40 元/月起"
+    date: "2026-10-15"
+    productId: volcengine
+    summary: "火山引擎方舟正式推出 Coding Plan，支持豆包 Seed、DeepSeek、GLM、Kimi、MiniMax 五款模型自由切换，Auto 模式智能调度，Lite 档 40 元/月。"
+    changes:
+      - "新增 Coding Plan 产品线，分 Lite（40元）和 Pro（200元）两档"
+      - "模型池覆盖豆包 Seed、DeepSeek V4 Flash、GLM、Kimi、MiniMax"
+      - "兼容 Claude Code、OpenClaw、Cline、Cursor 等 10+ 编码工具"
+      - "含 Embedding 向量模型，可同时做 RAG"
+    sourceUrl: https://www.volcengine.com/product/ark
+
+  - id: volc-agent-plan-harness
+    title: "火山方舟 Agent Plan 升级：Harness 联网搜索增强"
+    date: "2026-10-10"
+    productId: volcengine
+    summary: "火山方舟 Agent Plan 更新 Harness 联网搜索能力，支持多模态图/视频理解，Medium 档 200 元/月 10 万 AFP。"
+    changes:
+      - "Agent Plan Medium 档 10 万 AFP，200 元/月"
+      - "Harness 联网搜索能力增强"
+      - "新增多模态（图/视频）理解"
+      - "原生 ArkClaw 云端 Agent"
+    sourceUrl: https://www.volcengine.com/product/ark
+
+  - id: tencent-coding-79
+    title: "腾讯云 Coding Plan 首月 7.9 元，混元+GLM+Kimi+MiniMax"
+    date: "2026-10-08"
+    productId: tencent
+    summary: "腾讯云推出 Coding Plan 限时特惠，首月 7.9 元，支持混元 HY 2.0、GLM-5、Kimi-K2.5、MiniMax-M2.7 四款模型。"
+    changes:
+      - "Lite 档首月 7.9 元，次月 20 元，第三月起 40 元"
+      - "模型覆盖 Tencent HY 2.0、GLM-5、Kimi-K2.5、MiniMax-M2.7"
+      - "支持 OpenClaw、Codebuddy、Claude Code 等工具"
+    sourceUrl: https://cloud.tencent.com/act/pro/tokenplan
+
+  - id: zhipu-glm-53
+    title: "智谱 GLM-5.3 上线 Coding Plan，长链路编码能力提升"
+    date: "2026-10-05"
+    productId: zhipu
+    summary: "智谱 GLM-5.3 加入 Coding Plan 模型池，长链路编码 Agent 能力显著提升，非高峰时段积分 5 折。"
+    changes:
+      - "GLM-5.3 加入 Coding Plan 模型池"
+      - "长链路编码 Agent 能力增强"
+      - "非高峰时段积分 5 折抵扣"
+      - "内置 MCP 工具：联网搜索、网页读取、仓库读取"
+    sourceUrl: https://www.zhipuai.cn/
+
+  - id: minimax-100tps
+    title: "MiniMax Token Plan 支持 100+ TPS 极速推理"
+    date: "2026-09-28"
+    productId: minimax
+    summary: "MiniMax Token Plan 极速版上线，M2.7-highspeed 约 100 TPS，Max 极速版 199 元/月。"
+    changes:
+      - "极速版 M2.7-highspeed 约 100 TPS"
+      - "Max 极速版 199 元/月，1000 prompts/5小时"
+      - "Starter 入门档 29 元/月"
+    sourceUrl: https://www.minimaxi.com/

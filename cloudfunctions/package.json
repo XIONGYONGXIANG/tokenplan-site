@@ -1,0 +1,7 @@
+{
+  "name": "cloudfunctions",
+  "version": "1.0.0",
+  "dependencies": {
+    "tcb-admin-node": "^2.0.0"
+  }
+}

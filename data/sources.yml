@@ -1,0 +1,67 @@
+# 官方来源页面清单
+# GitHub Actions 每 4 小时检查这些页面的可访问性和正文指纹变化
+# 检测到变化时创建 source-change 标签的 Issue 提醒人工核验
+
+sources:
+  - id: volcengine-coding
+    name: 火山方舟 Coding Plan
+    url: https://www.volcengine.com/product/ark
+    productId: volcengine
+    type: coding
+    category: official
+
+  - id: volcengine-agent
+    name: 火山方舟 Agent Plan
+    url: https://www.volcengine.com/product/ark
+    productId: volcengine
+    type: agent
+    category: official
+
+  - id: zhipu-coding
+    name: 智谱 GLM Coding Plan
+    url: https://www.zhipuai.cn/
+    productId: zhipu
+    type: coding
+    category: official
+
+  - id: bailian-token
+    name: 阿里云百炼 Token Plan
+    url: https://bailian.console.aliyun.com/
+    productId: aliyun
+    type: token
+    category: official
+
+  - id: bailian-coding
+    name: 阿里云百炼 Coding Plan
+    url: https://bailian.console.aliyun.com/
+    productId: aliyun
+    type: coding
+    category: official
+
+  - id: tencent-token
+    name: 腾讯云 TokenHub / Token Plan
+    url: https://cloud.tencent.com/act/pro/tokenplan
+    productId: tencent
+    type: token
+    category: official
+
+  - id: minimax-token
+    name: MiniMax Token Plan
+    url: https://www.minimaxi.com/
+    productId: minimax
+    type: coding
+    category: official
+
+  - id: kimi-code
+    name: Kimi Code Plan
+    url: https://www.moonshot.cn/
+    productId: kimi
+    type: coding
+    category: official
+
+  - id: openrouter-models
+    name: OpenRouter Models API
+    url: https://openrouter.ai/api/v1/models
+    productId: openrouter
+    type: api
+    category: api

@@ -1,0 +1,108 @@
+# Agent Plan 类套餐（面向 Agent 多步任务与多模型编排）
+# 核心推荐：火山方舟 Agent Plan
+# 数据来源：各厂商官方定价页，核验日期见 verifiedAt
+
+plans:
+  # ===== 火山方舟 Agent Plan（核心推荐）=====
+  - id: volc-agent-small
+    productId: volcengine
+    name: 火山方舟 Agent Plan Small
+    type: agent
+    tier: Small
+    price: 40
+    priceCurrency: CNY
+    priceNote: "40 元/月，2 万 AFP，测试原型"
+    firstMonthNote: "首月 ¥40"
+    billingUnit: "月"
+    limits:
+      fiveHour: "5小时限额"
+      weekly: "周限额"
+      monthly: "2 万 AFP"
+    perYuanQuota: null
+    modelCount: 4
+    toolCount: 4
+    models:
+      - 豆包 Seed 系列
+      - DeepSeek
+      - GLM
+      - Kimi
+    tools:
+      - Harness 联网搜索
+      - 多模态
+      - 代码 Agent
+    highlights:
+      - AFP 燃料值额度池
+      - 支持多模型
+      - 含联网 Harness
+      - 原生 ArkClaw 云端 Agent
+    officialUrl: https://www.volcengine.com/product/ark
+    verifiedAt: "2026-10-19"
+
+  - id: volc-agent-medium
+    productId: volcengine
+    name: 火山方舟 Agent Plan Medium
+    type: agent
+    tier: Medium
+    price: 200
+    priceCurrency: CNY
+    priceNote: "200 元/月，10 万 AFP，日常开发首选"
+    firstMonthNote: "首月 ¥200"
+    billingUnit: "月"
+    limits:
+      fiveHour: "5小时限额"
+      weekly: "周限额"
+      monthly: "10 万 AFP"
+    perYuanQuota: null
+    modelCount: 4
+    toolCount: 4
+    models:
+      - 豆包 Seed 系列
+      - DeepSeek
+      - GLM
+      - Kimi
+    tools:
+      - Harness 联网搜索
+      - 多模态（图/视频）
+      - ArkClaw 云端 Agent
+    highlights:
+      - 联网搜索能力强
+      - 原生 ArkClaw 云端 Agent
+      - 豆包 Seed 稳定性好
+    caveats:
+      - AFP 是折算积分，不是原生 token
+      - 月+周+5小时三层限流
+      - 额度当月清零
+    officialUrl: https://www.volcengine.com/product/ark
+    verifiedAt: "2026-10-19"
+
+  - id: volc-agent-large
+    productId: volcengine
+    name: 火山方舟 Agent Plan Large
+    type: agent
+    tier: Large
+    price: 1000
+    priceCurrency: CNY
+    priceNote: "千元档位，生产级重度调用"
+    firstMonthNote: "首月 ¥1000"
+    billingUnit: "月"
+    limits:
+      fiveHour: "5小时限额"
+      weekly: "周限额"
+      monthly: "大额 AFP"
+    perYuanQuota: null
+    modelCount: 4
+    toolCount: 4
+    models:
+      - 豆包 Seed 系列
+      - DeepSeek
+      - GLM
+      - Kimi
+    tools:
+      - Harness 联网搜索
+      - 多模态
+      - ArkClaw 云端 Agent
+    highlights:
+      - 生产级重度调用
+      - 高并发
+    officialUrl: https://www.volcengine.com/product/ark
+    verifiedAt: "2026-10-19"

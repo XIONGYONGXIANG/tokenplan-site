@@ -1,0 +1,156 @@
+# Token Plan 类套餐（按 Token / Credits / 积分统一计量的 API 订阅）
+# 数据来源：各厂商官方定价页，核验日期见 verifiedAt
+# 注意：Credits/Token/积分/Prompt/请求次数不等价，不做跨计量单位硬换算
+
+plans:
+  # ===== 阿里云百炼 Token Plan =====
+  - id: bailian-token-lite
+    productId: aliyun
+    name: 百炼 Token Plan Lite
+    type: token
+    tier: Lite
+    price: 39
+    priceCurrency: CNY
+    priceNote: "限时价 39 元/月，每月 11500 Credits"
+    firstMonthNote: "首月 ¥39"
+    billingUnit: "月"
+    limits:
+      fiveHour: null
+      weekly: null
+      monthly: "11500 Credits"
+    perYuanQuota: null
+    modelCount: 3
+    toolCount: 3
+    models:
+      - Qwen 全系
+      - DeepSeek V4 Flash
+      - GLM
+    tools:
+      - Cursor
+      - OpenClaw
+      - Qoder
+    highlights:
+      - 一套额度池多模型共用
+      - 图像/视频/TTS/联网统一扣 Credits
+      - 夜间调用折扣
+    caveats:
+      - Credits 不是 1:1 token，不同模型消耗系数不同
+      - 仅华北 2（北京）可用
+      - 7 天滚动限额 + 月度双限额
+    officialUrl: https://bailian.console.aliyun.com/
+    verifiedAt: "2026-10-19"
+
+  - id: bailian-token-standard
+    productId: aliyun
+    name: 百炼 Token Plan Standard
+    type: token
+    tier: Standard
+    price: 139
+    priceCurrency: CNY
+    priceNote: "个人 Agent 开发主力档，每月 45000 Credits"
+    firstMonthNote: "首月 ¥139"
+    billingUnit: "月"
+    limits:
+      fiveHour: null
+      weekly: "7天滚动限额"
+      monthly: "45000 Credits"
+    perYuanQuota: null
+    modelCount: 3
+    toolCount: 3
+    models:
+      - Qwen 全系
+      - DeepSeek V4 Flash
+      - GLM
+    tools:
+      - Cursor
+      - OpenClaw
+      - Qoder
+    highlights:
+      - 送 Harness 联网搜索
+      - 并发 3-4
+      - OpenAI 兼容接口
+    officialUrl: https://bailian.console.aliyun.com/
+    verifiedAt: "2026-10-19"
+
+  # ===== 腾讯云 TokenHub =====
+  - id: tencent-hy-token
+    productId: tencent
+    name: 腾讯云 Hy Token Plan
+    type: token
+    tier: Lite
+    price: 28
+    priceCurrency: CNY
+    priceNote: "首月 28 元，3500 万 Tokens/月"
+    firstMonthNote: "首月 ¥28"
+    billingUnit: "月"
+    limits:
+      fiveHour: null
+      weekly: null
+      monthly: "3500 万 Tokens"
+    perYuanQuota: "1250 万 Tokens/元"
+    modelCount: 1
+    toolCount: 0
+    models:
+      - Tencent HY 系列
+    tools: []
+    highlights:
+      - Token 计费
+      - 入门低价
+    officialUrl: https://cloud.tencent.com/act/pro/tokenplan
+    verifiedAt: "2026-10-19"
+
+  - id: tencent-tokenhub-pro
+    productId: tencent
+    name: 腾讯云 TokenHub Pro
+    type: token
+    tier: Pro
+    price: 238
+    priceCurrency: CNY
+    priceNote: "238 元/月，Hy3 模型包月积分"
+    firstMonthNote: "首月 ¥238"
+    billingUnit: "月"
+    limits:
+      fiveHour: null
+      weekly: null
+      monthly: "包月积分"
+    perYuanQuota: null
+    modelCount: 1
+    toolCount: 0
+    models:
+      - Tencent HY 3
+    tools: []
+    highlights:
+      - 纯文本为主
+      - 适合代码、Agent 开发
+    officialUrl: https://cloud.tencent.com/act/pro/tokenplan
+    verifiedAt: "2026-10-19"
+
+  # ===== 阶跃星辰 =====
+  - id: stepfun-token
+    productId: stepfun
+    name: 阶跃星辰 Token Plan
+    type: token
+    tier: Standard
+    price: 99
+    priceCurrency: CNY
+    priceNote: "99 元/月，Step 系列模型"
+    firstMonthNote: "首月 ¥99"
+    billingUnit: "月"
+    limits:
+      fiveHour: null
+      weekly: null
+      monthly: "包月额度"
+    perYuanQuota: null
+    modelCount: 2
+    toolCount: 3
+    models:
+      - Step-2
+      - Step-1.5
+    tools:
+      - Claude Code
+      - Cursor
+    highlights:
+      - Step 系列大模型
+      - 长上下文支持
+    officialUrl: https://platform.stepfun.com/
+    verifiedAt: "2026-10-19"

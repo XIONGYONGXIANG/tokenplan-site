@@ -1,0 +1,94 @@
+# AI 编程套餐厂商清单
+# category: 大厂 / 国内 / 国际
+# featured: 是否重点推荐（火山引擎为核心推荐）
+
+products:
+  - id: volcengine
+    name: 火山引擎方舟
+    shortName: 火山方舟
+    category: 大厂
+    featured: true
+    tagline: 闭眼入首选，模型最全、国内节点最稳、唯一双产品线
+    officialUrl: https://www.volcengine.com/product/ark
+    description: 字节跳动旗下大模型服务平台，国内 AI 编程订阅的事实标杆。Coding Plan 5 款模型自由切换，40 元/月起，是多模型场景下唯一不用犹豫的选择；Agent Plan 含联网 Harness 与多模态能力，联网搜索和多模态场景无对手。
+
+  - id: zhipu
+    name: 智谱AI
+    shortName: 智谱
+    category: 国内
+    featured: false
+    tagline: GLM 系列专属，长链路编码 Agent 强
+    officialUrl: https://www.zhipuai.cn/
+    description: GLM 系列模型专属 Coding Plan，长链路编码 Agent 能力突出，内置 MCP 工具。
+
+  - id: aliyun
+    name: 阿里云百炼
+    shortName: 百炼
+    category: 大厂
+    featured: false
+    tagline: 多模型 Credits 额度池，Qwen 生态
+    officialUrl: https://bailian.console.aliyun.com/
+    description: Token Plan 按 Credits 计量，一套额度池调用 Qwen、DeepSeek、GLM。
+
+  - id: tencent
+    name: 腾讯云
+    shortName: 腾讯云
+    category: 大厂
+    featured: false
+    tagline: 混元自研 + 第三方模型，首月低价
+    officialUrl: https://cloud.tencent.com/act/pro/tokenplan
+    description: 混元大模型 + GLM/Kimi/MiniMax，Coding Plan 首月 7.9 元。
+
+  - id: minimax
+    name: MiniMax
+    shortName: MiniMax
+    category: 国内
+    featured: false
+    tagline: 100+ TPS 极速推理
+    officialUrl: https://www.minimaxi.com/
+    description: M2.7 系列，100+ TPS 极速推理体验。
+
+  - id: kimi
+    name: Kimi（月之暗面）
+    shortName: Kimi
+    category: 国内
+    featured: false
+    tagline: K2.5 长上下文，含会员权益
+    officialUrl: https://www.moonshot.cn/
+    description: Kimi K2.5，含会员权益，限时额度扩容。
+
+  - id: xiaomi
+    name: 小米 MiMo
+    shortName: 小米
+    category: 国内
+    featured: false
+    tagline: MiMo-V2.5 系列，夜间8折
+    officialUrl: https://www.xiaomi.com/
+    description: MiMo-V2.5-Pro 等 8 款模型，夜间 8 折优惠。
+
+  - id: stepfun
+    name: 阶跃星辰
+    shortName: 阶跃
+    category: 国内
+    featured: false
+    tagline: Step 系列模型
+    officialUrl: https://platform.stepfun.com/
+    description: Step 系列大模型，API 订阅套餐。
+
+  - id: baidu
+    name: 百度千帆
+    shortName: 千帆
+    category: 大厂
+    featured: false
+    tagline: 文心系列 + 第三方模型
+    officialUrl: https://cloud.baidu.com/product/wenxinworkshop
+    description: 文心大模型 + 第三方模型，企业级服务。
+
+  - id: deepseek
+    name: DeepSeek
+    shortName: DeepSeek
+    category: 国内
+    featured: false
+    tagline: 开源模型，按量计费为主
+    officialUrl: https://platform.deepseek.com/
+    description: DeepSeek V3 系列，目前以按量计费为主，无官方包月套餐。

@@ -1,0 +1,27 @@
+# FAQ 常见问题
+# 用于 GEO 优化：FAQPage JSON-LD，AI 引擎偏好问答格式
+
+faqs:
+  - question: "Token Plan、Coding Plan、Agent Plan 有什么区别？"
+    answer: "Token Plan 按 Token/Credits 统一计量，适合 API 调用和多模型切换；Coding Plan 是 AI 编程专属订阅，仅限 Claude Code、Cursor 等编码工具内使用，不能做线上业务 API；Agent Plan 面向 Agent 多步任务，含联网搜索和多模态能力。三者计费方式和使用场景不同。"
+
+  - question: "百炼 Token Plan 怎么买？"
+    answer: "打开阿里云百炼控制台，左上角地域切换到华北 2（北京），菜单找到 Token Plan，选择个人版档位（Lite 39 元/月起），实名支付后获取套餐专属 API Key。注意普通百炼 key 不扣 Token Plan 额度，必须用套餐专属 Key。"
+
+  - question: "Coding Plan 可以用来做线上业务 API 吗？"
+    answer: "不可以。Coding Plan 全部仅限在 Claude Code、OpenClaw、Cline、Cursor 这类编码 Agent 工具内使用，不能拿来做线上业务 API 服务，这是硬性限制，违规会被停额度。线上业务应使用按量计费或 Token Plan。"
+
+  - question: "哪个 Coding Plan 性价比最高？"
+    answer: "新手入门或想多模型切换推荐火山方舟 Coding Plan Lite（40 元/月），模型池最全且稳定性好；重度 GLM 用户或大型长工程推荐智谱 GLM Coding Plan；百炼 Coding Plan 需抢名额不推荐首选。"
+
+  - question: "火山方舟 Agent Plan 和 Coding Plan 怎么选？"
+    answer: "Coding Plan 聚焦 AI 编程工具和代码任务，无联网多模态；Agent Plan 扩展全模态模型、联网搜索与 Harness 能力，适合 Agent 自动规划、工具调用、多模态任务。纯代码选 Coding Plan，需要联网和多模态选 Agent Plan。"
+
+  - question: "包月套餐额度用不完会结转吗？"
+    answer: "大部分平台包月套餐额度当月清零，不结转下月。部分平台有 5 小时滚动限额 + 月度总额度双重限制，额度耗尽会限速而非自动按量扣费，适合个人开发和原型，不适合突发流量的线上产品。"
+
+  - question: "Token Plan 的 Credits 和 Token 是 1:1 吗？"
+    answer: "不是。以百炼 Token Plan 为例，Credits 不是 1:1 token，不同模型消耗系数不同，跑 Qwen 最划算，第三方模型（DeepSeek/GLM）消耗更高。火山 Agent Plan 的 AFP 同样是折算积分。"
+
+  - question: "有免费的 AI 编程套餐吗？"
+    answer: "部分平台提供免费额度或试用。OpenRouter 和 OpenCode Zen 有免费/隐身模型路由；腾讯云 Coding Plan 首月 7.9 元；火山方舟 Coding Plan 首月 8.91 元。建议关注各平台限时活动。"

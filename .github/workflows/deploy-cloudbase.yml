@@ -1,0 +1,38 @@
+name: Deploy to Tencent CloudBase
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "47 3 * * *" # 每天 UTC 03:47 重新构建部署
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Install CloudBase CLI
+        run: npm install -g @cloudbase/cli
+
+      - name: Deploy to CloudBase
+        run: tcb hosting deploy out -e "$TCB_ENV_ID"
+        env:
+          TCB_ENV_ID: ${{ secrets.TCB_ENV_ID }}
+          TENCENTCLOUD_SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
+          TENCENTCLOUD_SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
+
+      - name: Submit URLs to IndexNow
+        run: node scripts/indexnow-submit.mjs
