@@ -63,8 +63,51 @@ export const ArticleSchema = z.object({
   sourceUrl: z.string(),
 });
 
+// ===== 答案型指南（GEO 问答内容，人工维护）=====
+
+export const GuideTableSchema = z.object({
+  headers: z.array(z.string()),
+  rows: z.array(z.array(z.string())),
+  // 可选：表格说明（caption），帮助 AI 理解表格口径
+  caption: z.string().optional(),
+});
+
+export const GuideSectionSchema = z.object({
+  heading: z.string(),
+  paragraphs: z.array(z.string()).optional(),
+  bullets: z.array(z.string()).optional(),
+  table: GuideTableSchema.optional(),
+});
+
+export const GuideLinkSchema = z.object({
+  label: z.string(),
+  href: z.string(), // 站内路径，如 /guides/xxx/ 或 /platforms/volcengine/
+});
+
+export const GuideSourceSchema = z.object({
+  label: z.string(),
+  url: z.string(),
+});
+
+export const GuideSchema = z.object({
+  id: z.string(),
+  title: z.string(), // 对齐用户会问 AI 的原话（问题型标题）
+  description: z.string(), // meta description / 摘要
+  date: z.string(), // 首次发布
+  updated: z.string(), // 最后更新
+  conclusion: z.string(), // 一句话结论（首屏直给，AI 易抽取）
+  tags: z.array(z.string()).optional(),
+  sections: z.array(GuideSectionSchema),
+  faqs: z.array(FaqSchema).min(1),
+  relatedProductIds: z.array(z.string()).optional(),
+  relatedLinks: z.array(GuideLinkSchema).optional(),
+  sources: z.array(GuideSourceSchema).optional(),
+});
+
 export type Plan = z.infer<typeof PlanSchema>;
 export type Product = z.infer<typeof ProductSchema>;
 export type Source = z.infer<typeof SourceSchema>;
 export type Faq = z.infer<typeof FaqSchema>;
 export type Article = z.infer<typeof ArticleSchema>;
+export type Guide = z.infer<typeof GuideSchema>;
+export type GuideSection = z.infer<typeof GuideSectionSchema>;

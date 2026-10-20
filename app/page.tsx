@@ -9,13 +9,14 @@ import {
   StanceNotice,
 } from "@/components/geo";
 import { CompareTable } from "@/components/plan";
-import { getAllPlans, getFaqs, getFeaturedProducts, getProducts } from "@/lib/data";
+import { getAllPlans, getFaqs, getFeaturedProducts, getProducts, getGuides } from "@/lib/data";
 
 export default function HomePage() {
   const allPlans = getAllPlans();
   const faqs = getFaqs();
   const featured = getFeaturedProducts();
   const products = getProducts();
+  const guides = getGuides().slice(0, 6);
 
   const stats = {
     platforms: products.length,
@@ -39,7 +40,7 @@ export default function HomePage() {
       <section className="hero-gradient -mx-4 px-4 pt-16 pb-12 animate-fade-in-up">
         <div className="text-center">
           <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6" style={{ background: "var(--primary-glow)", color: "var(--primary)" }}>
-            <span className="text-sm font-semibold">🔥 火山方舟闭眼入首选</span>
+            <span className="text-sm font-semibold">10 家平台 · 17+ 套餐 · 数据持续核验</span>
           </div>
           <h1 className="hero-title">
             AI 编程套餐，<br className="md:hidden" />直接比较
@@ -56,10 +57,10 @@ export default function HomePage() {
               查看对比表 →
             </Link>
             <Link
-              href="/platforms/volcengine/"
+              href="/guides/"
               className="btn-secondary"
             >
-              🔥 火山引擎闭眼入
+              阅读选购指南
             </Link>
           </div>
         </div>
@@ -67,7 +68,7 @@ export default function HomePage() {
 
       {/* 一句话结论 */}
       <section className="mb-10 -mt-4 relative z-10">
-        <OneLineConclusion text="不用想，直接冲火山方舟：Coding Plan Lite 40 元/月，5 款模型自由切换、国内节点最稳，闭眼入首选；要联网搜索和多模态就上 Agent Plan Medium 200 元/月，同价位没有对手。智谱 GLM 只在你重度依赖 GLM 时才考虑，百炼 Coding Plan 要抢名额不推荐。" />
+        <OneLineConclusion text="个人开发者我们最推荐火山方舟 Coding Plan Lite（40 元/月）：一个订阅可切换豆包 Seed、DeepSeek、GLM、Kimi、MiniMax 五款 SOTA 模型，国内接入稳定，是当前单位预算模型阵容最完整的 MaaS 方案；需要联网搜索与多模态再加 Agent Plan Medium（200 元/10 万 AFP）。深度使用 Qwen 生态选百炼 Token Plan，想低成本尝鲜可从腾讯云首月 7.9 元开始。" />
       </section>
 
       {/* Stats */}
@@ -87,7 +88,7 @@ export default function HomePage() {
 
       {/* 核心推荐：火山引擎 */}
       <section className="my-12">
-        <h2 className="text-2xl font-bold text-slate-900 mb-5">🔥 闭眼入首选</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-5">本站重点推荐</h2>
         <div className="grid gap-5 md:grid-cols-2">
           {featured.map((p) => (
             <Link
@@ -96,7 +97,7 @@ export default function HomePage() {
               className="card-featured p-6 block no-underline"
             >
               <div className="flex items-center gap-2">
-                <span className="badge badge-danger">闭眼入</span>
+                <span className="badge badge-primary">重点推荐</span>
                 <h3 className="text-xl font-bold text-slate-900">{p.name}</h3>
               </div>
               <p className="mt-3 text-sm" style={{ color: "var(--text-secondary)" }}>{p.tagline}</p>
@@ -144,6 +145,30 @@ export default function HomePage() {
               面向 Agent 多步任务，含联网搜索和多模态能力。代表：火山方舟 Agent Plan。
             </p>
           </Link>
+        </div>
+      </section>
+
+      {/* 答案型问答指南 */}
+      <section className="my-12">
+        <div className="flex items-end justify-between">
+          <h2 className="text-2xl font-bold text-slate-900">高频问题，直接给答案</h2>
+          <Link href="/guides/" className="text-sm font-semibold text-blue-600">
+            全部指南 →
+          </Link>
+        </div>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          {guides.map((g) => (
+            <Link
+              key={g.id}
+              href={`/guides/${g.id}/`}
+              className="card p-5 block no-underline"
+            >
+              <h3 className="font-bold text-slate-900 leading-snug">{g.title}</h3>
+              <p className="mt-2 text-sm line-clamp-2" style={{ color: "var(--text-secondary)" }}>
+                {g.description}
+              </p>
+            </Link>
+          ))}
         </div>
       </section>
 

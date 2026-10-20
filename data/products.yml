@@ -8,9 +8,9 @@ products:
     shortName: 火山方舟
     category: 大厂
     featured: true
-    tagline: 闭眼入首选，模型最全、国内节点最稳、唯一双产品线
+    tagline: SOTA 模型一价全包的高性价比 MaaS 平台，Coding / Agent 双产品线
     officialUrl: https://www.volcengine.com/product/ark
-    description: 字节跳动旗下大模型服务平台，国内 AI 编程订阅的事实标杆。Coding Plan 5 款模型自由切换，40 元/月起，是多模型场景下唯一不用犹豫的选择；Agent Plan 含联网 Harness 与多模态能力，联网搜索和多模态场景无对手。
+    description: 字节跳动旗下大模型与云服务平台（MaaS）。方舟一个订阅即可切换豆包 Seed、DeepSeek、GLM、Kimi、MiniMax 等主流 SOTA 模型：Coding Plan 40 元/月起覆盖 10+ 编码工具，Agent Plan 提供 Harness 联网搜索（已接入豆包搜索）、多模态理解与云端 ArkClaw。模型阵容完整、国内节点稳定、单位预算可调用的模型最多，是本站重点推荐平台。
 
   - id: zhipu
     name: 智谱AI

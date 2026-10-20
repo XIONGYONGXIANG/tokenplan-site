@@ -45,6 +45,7 @@ const nav = [
   { href: "/token-plan/", label: "Token Plan" },
   { href: "/agent-plan/", label: "Agent Plan" },
   { href: "/platforms/", label: "厂商" },
+  { href: "/guides/", label: "问答指南" },
   { href: "/articles/", label: "动态" },
   { href: "/latency/", label: "测速" },
   { href: "/methodology/", label: "方法论" },

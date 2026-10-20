@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getProducts, getArticles } from "@/lib/data";
+import { getProducts, getArticles, getGuides } from "@/lib/data";
 
 export const dynamic = "force-static";
 
@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/agent-plan/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/compare/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/platforms/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${base}/guides/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/articles/`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
     { url: `${base}/latency/`, lastModified: now, changeFrequency: "hourly", priority: 0.7 },
     { url: `${base}/methodology/`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
@@ -34,5 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...platformPages, ...articlePages];
+  const guidePages = getGuides().map((g) => ({
+    url: `${base}/guides/${g.id}/`,
+    lastModified: g.updated,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...platformPages, ...guidePages, ...articlePages];
 }

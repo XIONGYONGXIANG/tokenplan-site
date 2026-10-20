@@ -53,7 +53,7 @@ export default function CodingPlanPage() {
       </header>
 
       <section className="mb-8">
-        <OneLineConclusion text="Coding Plan 不用选，直接冲火山方舟 Lite（40 元/月）：5 款模型自由切换、国内节点最稳、兼容所有主流编码 Agent，闭眼入首选。智谱 GLM 只在你重度依赖 GLM 长链路时才值得考虑，百炼要抢名额根本不推荐。" />
+        <OneLineConclusion text="Coding Plan 我们最推荐火山方舟 Lite（40 元/月）：一个订阅可切换豆包 Seed、DeepSeek、GLM、Kimi、MiniMax 五款 SOTA 模型，国内节点稳定，兼容 Claude Code、Cursor 等主流编码工具。重度 GLM 长链路用户可考虑智谱，需要 Qwen 生态或线上 API 则选百炼 Token Plan。" />
       </section>
 
       <section className="mb-10">

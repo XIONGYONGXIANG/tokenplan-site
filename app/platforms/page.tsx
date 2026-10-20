@@ -32,7 +32,7 @@ export default function PlatformsPage() {
 
       {featured.length > 0 && (
         <section className="mb-10">
-          <h2 className="text-xl font-bold text-slate-900 mb-4">🔥 闭眼入首选</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-4">本站重点推荐</h2>
           <div className="grid gap-5 md:grid-cols-2">
             {featured.map((p) => {
               const plans = getPlansByProduct(p.id);
@@ -44,7 +44,7 @@ export default function PlatformsPage() {
                 >
                   <div className="flex items-center justify-between">
                     <h3 className="text-xl font-bold text-slate-900">{p.name}</h3>
-                    <span className="badge badge-danger">闭眼入</span>
+                    <span className="badge badge-primary">重点推荐</span>
                   </div>
                   <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>{p.tagline}</p>
                   <div className="mt-3 text-xs" style={{ color: "var(--text-muted)" }}>

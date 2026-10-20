@@ -7,11 +7,13 @@ import {
   SourceSchema,
   FaqSchema,
   ArticleSchema,
+  GuideSchema,
   type Plan,
   type Product,
   type Source,
   type Faq,
   type Article,
+  type Guide,
 } from "./schema";
 
 const DATA_DIR = path.join(process.cwd(), "data");
@@ -62,6 +64,15 @@ export function getArticles(): Article[] {
 
 export function getArticleById(id: string): Article | undefined {
   return getArticles().find((a) => a.id === id);
+}
+
+export function getGuides(): Guide[] {
+  const data = loadYaml<{ guides: Guide[] }>("guides.yml");
+  return data.guides.map((g) => GuideSchema.parse(g));
+}
+
+export function getGuideById(id: string): Guide | undefined {
+  return getGuides().find((g) => g.id === id);
 }
 
 export function getProductById(id: string): Product | undefined {

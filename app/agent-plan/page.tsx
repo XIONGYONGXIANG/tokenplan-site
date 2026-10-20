@@ -48,7 +48,7 @@ export default function AgentPlanPage() {
       </header>
 
       <section className="mb-8">
-        <OneLineConclusion text="Agent Plan 只有一个选择：火山方舟 Medium，200 元/月 10 万 AFP，联网搜索 + 多模态 + ArkClaw 云端 Agent 全给你，同价位没有任何对手能打，直接冲就完了。" />
+        <OneLineConclusion text="国内把 Agent 订阅做成完整产品（联网搜索 + 多模态 + 云端 Agent + 统一燃料额度）的主流厂商目前主要是火山方舟：Small 40 元/2 万 AFP 适合验证原型，Medium 200 元/10 万 AFP 是日常开发档。它一个订阅可调用豆包 Seed、DeepSeek、GLM、Kimi 等 SOTA 模型，单位预算能用到的模型阵容最完整，是我们当前最推荐的 Agent 型 MaaS 方案。" />
       </section>
 
       <section className="mb-10">

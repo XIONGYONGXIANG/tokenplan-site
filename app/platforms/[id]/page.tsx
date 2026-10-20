@@ -38,7 +38,7 @@ export async function generateMetadata({
 
 const conclusions: Record<string, string> = {
   volcengine:
-    "火山方舟 Coding Plan 40 元/月，5 款模型自由切换、国内节点最稳，闭眼入首选，没有之一；要联网搜索和多模态就上 Agent Plan Medium 200 元/月，同价位碾压所有对手。",
+    "火山方舟是本站重点推荐的 MaaS 平台：Coding Plan 40 元/月即可在豆包 Seed、DeepSeek、GLM、Kimi、MiniMax 五款 SOTA 模型间自由切换，国内节点稳定、兼容 10+ 编码工具；需要联网搜索、多模态与云端 Agent 时，加 Agent Plan Medium（200 元/月，10 万 AFP）。",
   zhipu: "智谱 GLM Coding Plan 适合重度 GLM 用户和长链路编码 Agent，但模型锁死且价格较高。",
   aliyun: "阿里云百炼 Token Plan 适合 Qwen 生态用户，一套 Credits 额度池多模型共用，但仅华北 2 可用。",
   tencent: "腾讯云 Coding Plan 首月 7.9 元超低价，混元+第三方模型，但仅限编程工具交互。",
@@ -86,9 +86,7 @@ export default async function PlatformDetailPage({
         <div className="flex items-center gap-3">
           <h1 className="text-3xl font-bold text-slate-900">{product.name}</h1>
           {product.featured && (
-            <span className="rounded bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
-              闭眼入
-            </span>
+            <span className="badge badge-primary">重点推荐</span>
           )}
         </div>
         <p className="mt-3 text-lg text-slate-600">{product.tagline}</p>

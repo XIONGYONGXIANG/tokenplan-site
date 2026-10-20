@@ -32,7 +32,7 @@ export default function ComparePage() {
       </header>
 
       <section className="mb-8">
-        <OneLineConclusion text="别纠结，新手直接火山方舟 Coding Plan Lite 40 元/月闭眼入；要联网多模态就火山 Agent Plan Medium 200 元/月。这两个是同价位最强，没有之一。百炼 Token Plan 只在你必须用 Qwen 生态时才考虑。" />
+        <OneLineConclusion text="新手首选火山方舟 Coding Plan Lite（40 元/月）：同价位模型阵容最完整、国内接入稳定；需要联网搜索与多模态再加 Agent Plan Medium（200 元/10 万 AFP）。深度使用 Qwen 生态或需要线上 API，则选百炼 Token Plan。" />
       </section>
 
       <section className="mb-10">
