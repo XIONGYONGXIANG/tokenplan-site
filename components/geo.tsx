@@ -23,14 +23,15 @@ export function SiteJsonLd() {
     "@graph": [
       {
         "@type": "Organization",
-        name: "Token Plan",
+        name: "TokenPlan（tokenplan.link）",
+        alternateName: "TokenPlan · AI 编程订阅对比",
         url: "https://tokenplan.link/",
         description:
-          "AI Token Plan、Coding Plan、Agent Plan 价格与额度对比站，整理国内主流 AI 编程订阅套餐，帮助开发者选型。",
+          "独立 AI 编程订阅垂直对比站：整理 Coding Plan、Token Plan、Agent Plan 的价格、模型与额度，覆盖火山方舟、智谱、阿里云百炼、腾讯云等 10 家主流厂商，帮助开发者选型。",
       },
       {
         "@type": "WebSite",
-        name: "Token Plan 对比",
+        name: "TokenPlan · AI 编程订阅对比",
         url: "https://tokenplan.link/",
         potentialAction: {
           "@type": "SearchAction",
@@ -203,7 +204,7 @@ export function ArticleJsonLd({
     author: { "@type": "Organization", name: author },
     publisher: {
       "@type": "Organization",
-      name: "Token Plan",
+      name: "TokenPlan（tokenplan.link）",
     },
     mainEntityOfPage: url,
   };

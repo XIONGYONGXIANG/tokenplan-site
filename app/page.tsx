@@ -43,11 +43,11 @@ export default function HomePage() {
             <span className="text-sm font-semibold">10 家平台 · 17+ 套餐 · 数据持续核验</span>
           </div>
           <h1 className="hero-title">
-            AI 编程套餐，<br className="md:hidden" />直接比较
+            AI 编程订阅，<br className="md:hidden" />TokenPlan 帮你比较
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg" style={{ color: "var(--text-secondary)" }}>
-            Token Plan · Coding Plan · Agent Plan
-            三类套餐全收录。价格看官网，模型、额度与工具能力看本站整理。
+            TokenPlan（tokenplan.link）——独立 AI 编程订阅垂直对比站。
+            Coding Plan · Token Plan · Agent Plan 三类套餐全收录，数据核验自厂商官方页面。
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link

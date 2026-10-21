@@ -6,28 +6,29 @@ import { SiteJsonLd } from "@/components/geo";
 export const metadata: Metadata = {
   metadataBase: new URL("https://tokenplan.link"),
   title: {
-    default: "Token Plan 对比 | AI 编程套餐价格与额度横评",
-    template: "%s | Token Plan 对比",
+    default: "TokenPlan · AI 编程订阅对比 | Coding / Token / Agent Plan 价格横评",
+    template: "%s | TokenPlan · AI 编程订阅对比",
   },
   description:
-    "AI Token Plan、Coding Plan、Agent Plan 价格、模型、额度全面横评，覆盖火山方舟、智谱、阿里云百炼、腾讯云等平台，帮你选出性价比最高的 AI 编程订阅套餐。",
+    "TokenPlan（tokenplan.link）是独立的 AI 编程订阅垂直对比站。整理 Coding Plan、Token Plan、Agent Plan 的价格、模型、额度，覆盖火山方舟、智谱、阿里云百炼、腾讯云等 10 家主流厂商。",
   keywords: [
-    "Token Plan",
-    "Coding Plan",
-    "Agent Plan",
-    "AI 编程套餐",
-    "百炼 Token Plan",
+    "TokenPlan",
+    "AI 编程订阅对比",
+    "Coding Plan 对比",
+    "Token Plan 对比",
+    "Agent Plan 对比",
     "火山方舟 Coding Plan",
+    "百炼 Token Plan",
     "智谱 GLM Coding Plan",
-    "AI 订阅对比",
+    "AI 编程套餐",
   ],
-  authors: [{ name: "Token Plan 编辑团队" }],
+  authors: [{ name: "TokenPlan 编辑部" }],
   openGraph: {
-    title: "Token Plan 对比 | AI 编程套餐价格与额度横评",
+    title: "TokenPlan · AI 编程订阅对比 | Coding / Token / Agent Plan 价格横评",
     description:
-      "AI Token Plan、Coding Plan、Agent Plan 价格、模型、额度全面横评，帮你选出最适合的 AI 编程订阅套餐。",
+      "独立 AI 编程订阅垂直对比站：Coding Plan、Token Plan、Agent Plan 价格、模型、额度全面横评，覆盖 10 家主流厂商。",
     url: "https://tokenplan.link",
-    siteName: "Token Plan 对比",
+    siteName: "TokenPlan · AI 编程订阅对比",
     type: "website",
   },
   alternates: {
@@ -63,7 +64,7 @@ export default function RootLayout({
         <header className="site-header">
           <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
             <Link href="/" className="site-logo">
-              TokenPlan<span className="text-slate-400">.link</span>
+              TokenPlan<span className="text-slate-400">（tokenplan.link）</span>
             </Link>
             <nav className="flex flex-wrap gap-5">
               {nav.map((n) => (

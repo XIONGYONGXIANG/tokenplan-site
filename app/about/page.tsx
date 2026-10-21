@@ -3,9 +3,9 @@ import { Container, BreadcrumbJsonLd } from "@/components/geo";
 import { getSources } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "关于 TokenPlan.link",
+  title: "关于 TokenPlan · AI 编程订阅对比",
   description:
-    "TokenPlan.link 是独立的 AI 编程套餐对比站，整理 Token Plan、Coding Plan、Agent Plan 的价格、额度与模型信息，数据均来自厂商官方页面。",
+    "TokenPlan（tokenplan.link）是独立的 AI 编程订阅垂直对比站，整理 Coding Plan、Token Plan、Agent Plan 的价格、额度与模型信息，数据均来自厂商官方页面。",
   alternates: { canonical: "https://tokenplan.link/about/" },
 };
 
@@ -22,40 +22,40 @@ export default function AboutPage() {
       />
 
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-900">关于 TokenPlan.link</h1>
+        <h1 className="text-3xl font-bold text-slate-900">关于 TokenPlan · AI 编程订阅对比</h1>
         <p className="mt-3 text-slate-600">
-          更新日期：2026-10-19
+          独立站点 · 非厂商官方 · 2026-10-21 上线
         </p>
       </header>
 
       <section className="mb-8 prose max-w-none">
-        <h2 className="text-xl font-bold">专注 AI 编程套餐对比</h2>
+        <h2 className="text-xl font-bold">我们是谁</h2>
         <p className="mt-2 text-slate-600">
-          TokenPlan.link 是 AI Token Plan、Coding Plan、Agent Plan
-          垂直价格对比与选型资料站，服务个人开发者、AI 编程用户、技术团队及 API 接入团队。
+          TokenPlan（tokenplan.link）是一个**独立的 AI 编程订阅垂直对比站**，
+          与 tokenplan.toolsetlink.com 等同主题竞品无任何关系，本站内容与品牌完全自主运营。
         </p>
 
         <h2 className="mt-6 text-xl font-bold">我们整理哪些信息</h2>
         <p className="mt-2 text-slate-600">
-          我们将套餐价格、优惠、额度、重置周期、限速、模型能力、IDE Tools
-          与编程工具接入、官网入口信息放入统一框架，帮助用户进行选型。
+          我们将 Coding Plan（AI 编程专属）、Token Plan（API 额度池）、Agent Plan（联网多模态 Agent）
+          三类套餐的价格、优惠、额度、重置周期、限速、模型能力、IDE 工具兼容、官网入口放入统一框架，帮助用户快速选型。
         </p>
 
         <h2 className="mt-6 text-xl font-bold">数据来源与整理方法</h2>
         <p className="mt-2 text-slate-600">
-          资料主要来自厂商官网、价格页、产品文档及公开控制台信息。编辑团队按统一维度整理并交叉核对；
-          由于厂商规则可能变化，最终信息应以厂商官网和结算页面为准。
+          资料主要来自厂商官网、价格页、产品文档及公开控制台信息。所有条目标注最后核验日期；
+          厂商规则可能变化，最终请以厂商官网结算页面为准。
         </p>
 
         <h2 className="mt-6 text-xl font-bold">自动更新机制</h2>
         <p className="mt-2 text-slate-600">
-          GitHub Actions 每 4 小时检查下方列出的官方来源页面，比对 HTTP 状态和正文指纹。
-          检测到变化时创建审核 Issue，人工核验后更新数据。所有事实记录官方来源与最后核验日期。
+          GitHub Actions 每天 UTC 03:47 自动重新构建站点并向搜索引擎提交 IndexNow。
+          核心价格与额度变动会在官方页面指纹检测后人工核验更新。
         </p>
 
-        <h2 className="mt-6 text-xl font-bold">与 AI 厂商的关系</h2>
+        <h2 className="mt-6 text-xl font-bold">我们与厂商的关系</h2>
         <p className="mt-2 text-slate-600">
-          TokenPlan.link 是独立对比站，不是所列厂商的官方网站，也不代表厂商作出承诺。
+          TokenPlan 是独立对比站，不是所列厂商的官方网站，也不代表厂商作出任何承诺。
           部分外部链接可能包含推广参数并产生推广收益，但商业关系不影响比较维度和信息更正。
         </p>
       </section>
