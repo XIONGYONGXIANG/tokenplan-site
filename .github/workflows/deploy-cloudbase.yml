@@ -41,3 +41,10 @@ jobs:
       - name: Submit URLs to IndexNow
         if: success()
         run: node scripts/indexnow-submit.mjs
+
+      - name: Push URLs to Baidu & Toutiao
+        if: success()
+        run: node scripts/push-chinese-engines.mjs
+        env:
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+          TOUTIAO_PUSH_TOKEN: ${{ secrets.TOUTIAO_PUSH_TOKEN }}
